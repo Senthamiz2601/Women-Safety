@@ -2,6 +2,6 @@ Flask==2.3.3
 Flask-Mail==0.9.1
 transformers==4.31.0
 tokenizers==0.13.2      # use 0.13.2 to avoid Rust compilation issues
-torch==2.0.1            # 2.5.0 may fail; 2.0.1 is safer on Render
+torch==2.5.0             # 2.5.0 may fail; 2.0.1 is safer on Render
 geopy==2.4.1
 gunicorn==21.2.0
