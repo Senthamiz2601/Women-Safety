@@ -1,1 +1,15 @@
-pip install --prefer-binary -r requirements.txt
+services:
+  - type: web
+    name: women-safety-app
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        value: your_secret_key
+      - key: MAIL_USERNAME
+        value: your_email@gmail.com
+      - key: MAIL_PASSWORD
+        value: your_gmail_app_password
